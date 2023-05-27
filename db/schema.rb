@@ -17,21 +17,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_27_062924) do
   create_table "bills", force: :cascade do |t|
     t.string "name"
     t.string "icon"
-    t.bigint "user_id", null: false
+    t.bigint "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_bills_on_user_id"
+    t.index ["author_id"], name: "index_bills_on_author_id"
   end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.decimal "amount"
-    t.bigint "user_id", null: false
+    t.bigint "author_id", null: false
     t.bigint "bill_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_items_on_author_id"
     t.index ["bill_id"], name: "index_items_on_bill_id"
-    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_27_062924) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "bills", "users"
+  add_foreign_key "bills", "users", column: "author_id"
   add_foreign_key "items", "bills"
-  add_foreign_key "items", "users"
+  add_foreign_key "items", "users", column: "author_id"
 end
