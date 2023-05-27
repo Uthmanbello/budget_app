@@ -1,10 +1,12 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Bills</h1>
 
 <div id="bills">
   <% @bills.each do |bill| %>
-    <%= render bill %>
+    <%= link_to bill do %>
+      <%= render bill %>
+    <% end %>
+
+
     <p>
       <%= link_to "Show this bill", bill %>
     </p>

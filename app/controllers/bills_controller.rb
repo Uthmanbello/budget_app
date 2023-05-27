@@ -1,9 +1,12 @@
 class BillsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_bill, only: %i[ show edit update destroy ]
 
   # GET /bills or /bills.json
   def index
-    @bills = Bill.all
+    # @bills = Bill.all
+    # @user = User.find(params[:user_id])
+    @bills = @bills = Bill.where(author_id: current_user.id)
   end
 
   # GET /bills/1 or /bills/1.json
