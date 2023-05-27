@@ -4,6 +4,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string :name
       t.decimal :amount
       t.references :author, null: false, foreign_key: { to_table: :users }
+      # t.references :user, null: false, foreign_key: true
       t.references :bill, null: false, foreign_key: true
 
       t.timestamps
