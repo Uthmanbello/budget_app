@@ -11,21 +11,30 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class='login'>
+    <div>
+      <%= link_to "<-", bills_path, class: 'white' %>
+    </div>
+    <p>NEW BILL</p>
+    <div>
+      <%= form.submit 'Add', class: 'submit-button' %>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
-  </div>
+  <div class='login-fields'>
+    <div class="field login-field text1 padding">
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name, class: 'input-field' %>
+      <hr class= 'rule'>    
+    </div>
 
-  <div>
-    <%= form.hidden_field :author_id, value: current_user.id %>
-  </div>
+    <div class="field login-field text1 padding">
+      <%= form.label :icon, style: "display: block" %>
+      <%= form.text_field :icon, class: 'input-field' %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div>
+      <%= form.hidden_field :author_id, value: current_user.id %>
+    </div>
   </div>
 <% end %>
