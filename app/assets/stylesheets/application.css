@@ -70,19 +70,19 @@ a {
 .login-fields {
   background-color: white;
   margin-top: 10px;
+  border: 1px solid #94989c;;
 }
 
 .login-field {
   background-color: none;
   border: none;
-  border-bottom: 1px solid #666b72;
   padding-top: 10px;
 }
 
 .input-field {
   background-color: none;
   border: none;
-  width: 100vw;
+  width: 99vw;
 }
 
 .input-field:focus {
@@ -101,4 +101,12 @@ a {
   background: none;
   border: none;
   color: white;
+}
+
+.rule {
+  width: 99vw;
+}
+
+.upload-pic {
+  display: flex;
 }
