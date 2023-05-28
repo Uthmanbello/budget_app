@@ -1,22 +1,35 @@
-<h1>Items</h1>
-
-<div id="items">
-  <% @items.each do |item| %>
-    <%= render item %>
-    <p>
-      <%= link_to "Show this item", item %>
-    </p>
-  <% end %>
+<div class='login'>
+  <div>
+    <%= link_to "<-", bills_path, class: 'white' %>
+  </div>
+  <div>
+    <p>ITEMS</p>
+  </div>
+  <div class= 'empty-div'></div>
 </div>
 
-<%= link_to "New item", new_item_path %>
+<div class= 'items-container'>
+  <div class= 'items-heading'>
+    <p><%= @bill.icon %>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p class= 'grey'><%= @bill.name %></p>
+  </div>
+  <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year</p>
+  <hr>
+  <div id="items">
+    <% item_amount = 0 %>
+    <% @items.each do |item| %>
+      <%= render item %>
+  </div>
+  <div class= 'items-amount'>
+    <% item_amount += item.amount %>
+    <% end %>
+    <p class= 'grey'>TOTAL AMOUNT</p>
+    <p class= 'grey'>&dollar;&nbsp;<%= item_amount %></p>
+  </div>
+</div>
 
+<div class= 'empty'></div>
 
-<%= render @bill %>
-
-<div>
-  <%= link_to "Edit this bill", edit_bill_path(@bill) %> |
-  <%= link_to "Back to bills", bills_path %>
-
-  <%= button_to "Destroy this bill", @bill, method: :delete %>
+<div class= 'big'>
+    <%= link_to "ADD", new_item_path, class: 'white small' %>
 </div>

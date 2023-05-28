@@ -1,22 +1,11 @@
 <div id="<%= dom_id item %>">
-  <p>
-    <strong>Name:</strong>
-    <%= item.name %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= item.amount %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= item.author_id %>
-  </p>
-
-  <p>
-    <strong>Bill:</strong>
-    <%= item.bill_id %>
-  </p>
-
+  <div class= 'items'>
+    <p class= 'grey'><%= item.name %></p>
+    <div>
+      <p class= 'grey'>&dollar;&nbsp;<%= item.amount %></p>
+      <%= button_to "x", @item, method: :delete %>
+    </div>
+  </div>
+  <p class= 'time time1'><%= item.created_at.strftime("%d %B %Y at %l:%M%P") %></p>
+  <hr>
 </div>

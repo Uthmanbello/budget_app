@@ -4,12 +4,13 @@
   </div>
 
   <div class= 'flex-column'>
-    <p><%= bill.name %></p>
+    <p class= 'text2'><%= bill.name %></p>
     <p class= 'time'><%= bill.created_at.strftime("%d %B %Y") %></p>
   </div>
 
   <div class= 'bill-total'>
-    <p>&dollar;23</p>
+    <p class= 'grey'>&dollar;23</p>
+    <%= button_to "x", @bill, method: :delete %>
   </div>
 
 </div>

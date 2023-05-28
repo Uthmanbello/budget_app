@@ -35,23 +35,23 @@ a {
 }
 
 .blue {
-  color: #3778C2
+  color: #3778C2;
 }
 
 .green {
-  color: #5FB523
+  color: #5FB523;
 }
 
 .grey {
-  color: #434B54
+  color: #434B54;
 }
 
 .text1 {
-  color: #666b72
+  color: #666b72;
 }
 
 .text2 {
-  color: #94989c
+  color: #94989c;
 }
 
 .white {
@@ -98,7 +98,7 @@ a {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .submit-button {
@@ -155,6 +155,11 @@ a {
 
 .time {
   font-size: 0.8em;
+  color: #94989c;
+}
+
+.time1 {
+  margin-top: -20px;
 }
 
 .big {
@@ -194,4 +199,30 @@ a {
 
 .prompt {
   font-size: 0.9em;
+}
+
+.empty-div {
+  width: 35px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  width: 82vw;
+}
+
+.items-container {
+  background-color: white;
+  border: 1px solid #e0e6eb;
+  padding: 15px;
+  margin: 15px;
+}
+
+.items-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-heading {
+  display: flex;
 }
