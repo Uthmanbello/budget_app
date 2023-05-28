@@ -173,3 +173,25 @@ a {
   border: 1px solid white;
   height: 100%;
 }
+
+.empty {
+  height: 15vh;
+  width: 100%;
+  background-color: none;
+  padding: 15px
+}
+
+.bar {
+  width: 25px;
+  border: 1px solid white;
+  margin: 2px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.prompt {
+  font-size: 0.9em;
+}

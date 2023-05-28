@@ -40,7 +40,7 @@
 
     <div class="field login-field text1 padding">
       <% @bills = Bill.where(author_id: current_user.id) %>
-      <%= form.select :bill_id, options_from_collection_for_select(@bills, :id, :name, params[:bill_id]), { prompt: "Select Bill" }, class: "form-select input-field" %>
+      <%= form.select :bill_id, options_from_collection_for_select(@bills, :id, :name, params[:bill_id]), { prompt: "Select Bill" }, class: "form-select input-field prompt" %>
     </div>
   </div>
 <% end %>
