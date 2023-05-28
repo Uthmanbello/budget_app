@@ -1,17 +1,15 @@
-<div id="<%= dom_id bill %>">
-  <p>
-    <strong>Name:</strong>
-    <%= bill.name %>
-  </p>
+<div id="<%= dom_id bill %>" class= 'bills-list'>
+  <div class= 'bill-icon'>
+    <p><%= bill.icon %></p>
+  </div>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= bill.icon %>
-  </p>
+  <div class= 'flex-column'>
+    <p><%= bill.name %></p>
+    <p class= 'time'><%= bill.created_at.strftime("%d %B %Y") %></p>
+  </div>
 
-  <p>
-    <strong>User:</strong>
-    <%= bill.author_id %>
-  </p>
+  <div class= 'bill-total'>
+    <p>&dollar;23</p>
+  </div>
 
 </div>

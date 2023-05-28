@@ -31,7 +31,7 @@ a {
 }
 
 .padding {
-  padding: 10px;
+  padding: 15px;
 }
 
 .blue {
@@ -54,6 +54,10 @@ a {
   color: #94989c
 }
 
+.white {
+  color: white;
+}
+
 .background {
   color: #e3e7eb;
 }
@@ -64,7 +68,7 @@ a {
   align-items: center;
   background-color: #3778C2;
   color: white;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .login-fields {
@@ -76,7 +80,7 @@ a {
 .login-field {
   background-color: none;
   border: none;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .input-field {
@@ -94,7 +98,7 @@ a {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .submit-button {
@@ -109,4 +113,63 @@ a {
 
 .upload-pic {
   display: flex;
+}
+
+.budget {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #e0e6eb;
+  padding: 15px;
+}
+
+.bills {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #e0e6eb;
+  padding: 15px;
+  margin: 15px;
+}
+
+.bills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+}
+
+.bill-total {
+  flex-basis: 10%;
+}
+
+.bill-icon {
+  flex-basis: 25%;
+}
+
+.time {
+  font-size: 0.8em;
+}
+
+.big {
+  height: 15vh;
+  width: 100%;
+  background-color: #5FB523;
+  position: fixed;
+  bottom: 0;
+  padding: 15px
+}
+
+.small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 100%;
 }
