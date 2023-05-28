@@ -22,8 +22,7 @@
   </div>
 
   <div>
-    <%= form.label :author_id, style: "display: block" %>
-    <%= form.text_field :author_id %>
+    <%= form.hidden_field :author_id, value: current_user.id %>
   </div>
 
   <div>

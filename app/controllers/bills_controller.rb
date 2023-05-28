@@ -4,8 +4,6 @@ class BillsController < ApplicationController
 
   # GET /bills or /bills.json
   def index
-    # @bills = Bill.all
-    # @user = User.find(params[:user_id])
     @bills = @bills = Bill.where(author_id: current_user.id)
   end
 

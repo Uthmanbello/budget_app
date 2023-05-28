@@ -22,13 +22,12 @@
   </div>
 
   <div>
-    <%= form.label :author_id, style: "display: block" %>
-    <%= form.text_field :author_id %>
+    <%= form.hidden_field :author_id, value: current_user.id %>
   </div>
 
   <div>
-    <%= form.label :bill_id, style: "display: block" %>
-    <%= form.text_field :bill_id %>
+    <% @bills = Bill.where(author_id: current_user.id) %>
+    <%= form.select :bill_id, options_from_collection_for_select(@bills, :id, :name, params[:bill_id]), { prompt: "Select Bill" }, class: "form-select" %>
   </div>
 
   <div>
