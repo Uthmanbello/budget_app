@@ -18,7 +18,20 @@
 @import "font-awesome";
 
 body {
-  background-color: #e3e7eb
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padding {
+  padding: 10px;
 }
 
 .blue {
@@ -42,5 +55,50 @@ body {
 }
 
 .background {
-  color: #e3e7eb
+  color: #e3e7eb;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3778C2;
+  color: white;
+  padding-left: 10px;
+}
+
+.login-fields {
+  background-color: white;
+  margin-top: 10px;
+}
+
+.login-field {
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid #666b72;
+  padding-top: 10px;
+}
+
+.input-field {
+  background-color: none;
+  border: none;
+  width: 100vw;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  color: white;
 }
