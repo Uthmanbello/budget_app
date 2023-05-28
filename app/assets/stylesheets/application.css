@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  background-color: #e3e7eb
+}
+
+.blue {
+  color: #3778C2
+}
+
+.green {
+  color: #5FB523
+}
+
+.grey {
+  color: #434B54
+}
+
+.text1 {
+  color: #666b72
+}
+
+.text2 {
+  color: #94989c
+}
+
+.background {
+  color: #e3e7eb
+}
