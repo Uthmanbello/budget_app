@@ -293,10 +293,10 @@ a {
   display: flex;
 }
 
-@media only screen and (min-device-width: 768px) {
+/* @media only screen and (min-device-width: 768px) {
 .icon {
   width: 8vw;
   height: 15vh;
   padding-right: 10px;
 }
-}
+} */
