@@ -50,6 +50,10 @@ class BillsController < ApplicationController
     end
   end
 
+  def calculate_item_amount(bill)
+    bill.items.sum(:amount)
+  end
+  
   # DELETE /bills/1 or /bills/1.json
   def destroy
     @bill.destroy
@@ -69,5 +73,18 @@ class BillsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def bill_params
       params.require(:bill).permit(:name, :icon, :author_id)
+    end
+
+    def calculate_item_count(bill)
+      Item.where(bill_id: bill.id).count
+    end
+
+    def calculate_item_amount(bill)
+      @items = Item.where(bill_id: bill.id)
+      item_amount = 0
+      @items.each do |item|
+        item_amount += item.amount
+      end
+      item_amount
     end
 end

@@ -15,7 +15,7 @@
 <div id="bills">
   <div class= 'budget'>
     <p class= 'text2'>Total Budget</p>
-    <p class= 'grey'>&dollar;45.00</p>
+    <p class= 'grey'>&dollar;&nbsp;<%= calculate_total_budget %></p>
   </div>
   <% @bills.each do |bill| %>
     <%= link_to bill do %>
