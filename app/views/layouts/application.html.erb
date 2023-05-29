@@ -8,18 +8,14 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Lobster&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/dcdd89c74c.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <nav class='nav-bar'>
-      <% if user_signed_in? %>
-        <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to 'Login', new_user_session_path %>
-        <%= link_to 'Sign Up', new_user_registration_path %>
-      <% end %>
-    </nav>
-
     <%= yield %>
   </body>
 </html>

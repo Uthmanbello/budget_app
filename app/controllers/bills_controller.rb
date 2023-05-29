@@ -4,8 +4,6 @@ class BillsController < ApplicationController
 
   # GET /bills or /bills.json
   def index
-    # @bills = Bill.all
-    # @user = User.find(params[:user_id])
     @bills = @bills = Bill.where(author_id: current_user.id)
   end
 
@@ -30,7 +28,7 @@ class BillsController < ApplicationController
 
     respond_to do |format|
       if @bill.save
-        format.html { redirect_to bill_url(@bill), notice: "Bill was successfully created." }
+        format.html { redirect_to bills_url, notice: "Bill was successfully created." }
         format.json { render :show, status: :created, location: @bill }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -52,6 +50,10 @@ class BillsController < ApplicationController
     end
   end
 
+  def calculate_item_amount(bill)
+    bill.items.sum(:amount)
+  end
+  
   # DELETE /bills/1 or /bills/1.json
   def destroy
     @bill.destroy
@@ -71,5 +73,18 @@ class BillsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def bill_params
       params.require(:bill).permit(:name, :icon, :author_id)
+    end
+
+    def calculate_item_count(bill)
+      Item.where(bill_id: bill.id).count
+    end
+
+    def calculate_item_amount(bill)
+      @items = Item.where(bill_id: bill.id)
+      item_amount = 0
+      @items.each do |item|
+        item_amount += item.amount
+      end
+      item_amount
     end
 end

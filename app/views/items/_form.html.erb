@@ -11,27 +11,38 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class='login'>
+    <div>
+      <%= link_to bills_path do %>
+       <i class="fa-solid fa-arrow-left fa-2x white"></i>
+      <% end %>
+    </div>
+    <p>NEW ITEM</p>
+    <div>
+      <%= form.submit 'Add', class: 'submit-button' %>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
-  </div>
+  <div class='login-fields'>
+    <div class="field login-field text1 padding">
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name, class: 'input-field' %>
+      <hr class= 'rule'>
+    </div>
 
-  <div>
-    <%= form.label :author_id, style: "display: block" %>
-    <%= form.text_field :author_id %>
-  </div>
+    <div class="field login-field text1 padding">
+      <%= form.label :amount, style: "display: block" %>
+      <%= form.text_field :amount, class: 'input-field' %>
+      <hr class= 'rule'>
+    </div>
 
-  <div>
-    <%= form.label :bill_id, style: "display: block" %>
-    <%= form.text_field :bill_id %>
-  </div>
+    <div>
+      <%= form.hidden_field :author_id, value: current_user.id %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div class="field login-field text1 padding">
+      <% @bills = Bill.where(author_id: current_user.id) %>
+      <%= form.select :bill_id, options_from_collection_for_select(@bills, :id, :name, params[:bill_id]), { prompt: "Select Bill" }, class: "form-select input-field prompt" %>
+    </div>
   </div>
 <% end %>
