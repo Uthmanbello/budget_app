@@ -125,6 +125,7 @@ If you like this project please show me support by giving it a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank my colleagues at Microverse for their support during the project.
+I would like to also give credit to Gregoire Vella in Behance for his wonderful design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
