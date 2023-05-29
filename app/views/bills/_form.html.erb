@@ -12,9 +12,10 @@
   <% end %>
 
   <div class='login'>
-    <div>
-      <%= link_to "<-", bills_path, class: 'white' %>
-    </div>
+    <%= link_to bills_path, class: 'white' do %>
+      <i class="fa-solid fa-arrow-left fa-2x white"></i>
+    <% end %>
+
     <p>NEW BILL</p>
     <div>
       <%= form.submit 'Add', class: 'submit-button' %>

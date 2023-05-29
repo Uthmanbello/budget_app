@@ -74,6 +74,7 @@ a {
 
 .title {
   font-size: 2.8em;
+  font-family: 'Lobster', cursive;
 }
 
 .login-signup {
@@ -157,6 +158,10 @@ a {
 
 .upload-pic {
   display: flex;
+}
+
+.user {
+  margin-right: 10px;
 }
 
 .budget {

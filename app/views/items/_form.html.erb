@@ -13,7 +13,9 @@
 
   <div class='login'>
     <div>
-      <%= link_to "<-", items_path, class: 'white' %>
+      <%= link_to items_path do %>
+       <i class="fa-solid fa-arrow-left fa-2x white"></i>
+      <% end %>
     </div>
     <p>NEW ITEM</p>
     <div>

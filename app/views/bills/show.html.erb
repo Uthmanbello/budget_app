@@ -1,6 +1,8 @@
 <div class='login'>
   <div>
-    <%= link_to "<-", bills_path, class: 'white' %>
+    <%= link_to bills_path, class: 'white' do %>
+      <i class="fa-solid fa-arrow-left fa-2x white"></i>
+    <% end %>
   </div>
   <div>
     <p>ITEMS</p>
