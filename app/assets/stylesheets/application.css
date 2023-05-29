@@ -14,8 +14,8 @@
  *= require_self
  */
 
-@import "font-awesome-sprockets";
-@import "font-awesome";
+ @import "font-awesome-sprockets";
+ @import "font-awesome"; 
 
 body {
   background-color: whitesmoke;
@@ -64,6 +64,48 @@ a {
   color: #e3e7eb;
 }
 
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 15px;
+  margin-top: 30vh;
+}
+
+.title {
+  font-size: 2.8em;
+}
+
+.login-signup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+}
+
+.splash-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3778C2;
+  color: white;
+  border-radius: 2px;
+  font-size: 1.1em;
+  height: 9vh;
+  width: 90vw;
+}
+
+.splash-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666b72;
+  border-radius: 2px;
+  font-size: 1.1em;
+  height: 9vh;
+  width: 90vw;
+}
+
 .login {
   display: flex;
   justify-content: space-between;
@@ -88,7 +130,7 @@ a {
 .input-field {
   background-color: none;
   border: none;
-  width: 96vw;
+  width: 95vw;
 }
 
 .input-field:focus {
@@ -110,7 +152,7 @@ a {
 }
 
 .rule {
-  width: 99vw;
+  width: 96vw;
 }
 
 .upload-pic {

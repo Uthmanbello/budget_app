@@ -22,5 +22,8 @@
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
   <div class= 'forgot-pass'>
     <%= link_to "Forgot password?", new_password_path(resource_name), class: 'text1' %>
-  </div>  
+  </div> 
+  
+  <i class="fas fa-user"></i> 
+  <i class="fa-solid fa-arrow-right"></i>
 <% end %>
