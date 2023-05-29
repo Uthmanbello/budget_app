@@ -90,7 +90,7 @@ a {
   align-items: center;
   background-color: #3778C2;
   color: white;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 1.1em;
   height: 9vh;
   width: 90vw;
@@ -101,7 +101,7 @@ a {
   justify-content: center;
   align-items: center;
   color: #666b72;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 1.1em;
   height: 9vh;
   width: 90vw;
