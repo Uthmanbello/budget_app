@@ -12,8 +12,8 @@
 
 <div class= 'items-container'>
   <div class= 'items-heading'>
-    <p><%= @bill.icon %>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <p class= 'grey'><%= @bill.name %></p>
+    <%= image_tag 'profile pic.jpg', alt: "Bill icon", class: 'icon' %>
+    <p class= 'grey item-title'><%= @bill.name %></p>
   </div>
   <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year.
   The total amount for <%= @bill.name %> items is stated at the bottom of the list.</p>

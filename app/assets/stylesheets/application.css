@@ -172,6 +172,12 @@ a {
   padding: 15px;
 }
 
+.icon {
+  width: 23vw;
+  height: 12vh;
+  padding-right: 10px;
+}
+
 .bills {
   display: flex;
   justify-content: space-between;
@@ -192,7 +198,7 @@ a {
 .flex-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 65%;
+  flex-basis: 60%;
 }
 
 .bill-total {
@@ -200,12 +206,13 @@ a {
 }
 
 .bill-icon {
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 
 .time {
   font-size: 0.7em;
   color: #94989c;
+  margin-top: -5px;
 }
 
 .big {
@@ -266,6 +273,10 @@ a {
   width: 82vw;
 }
 
+.item-title {
+  margin-left: 10px;
+}
+
 .items-container {
   background-color: white;
   border: 1px solid #e0e6eb;
@@ -280,4 +291,12 @@ a {
 
 .items-heading {
   display: flex;
+}
+
+@media only screen and (min-device-width: 768px) {
+.icon {
+  width: 8vw;
+  height: 15vh;
+  padding-right: 10px;
+}
 }
