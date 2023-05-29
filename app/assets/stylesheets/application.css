@@ -25,6 +25,7 @@ body {
 * {
   box-sizing: border-box;
   font-size: 1.03em;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -129,8 +130,9 @@ a {
   justify-content: space-between;
   background-color: white;
   border: 1px solid #e0e6eb;
-  padding: 15px;
+  padding: 15px 15px 0px 15px;
   margin: 15px;
+  padding-bottom: -15px;
 }
 
 .bills-list {
@@ -155,12 +157,8 @@ a {
 }
 
 .time {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #94989c;
-}
-
-.time1 {
-  margin-top: -20px;
 }
 
 .big {
