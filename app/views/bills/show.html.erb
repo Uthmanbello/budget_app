@@ -13,16 +13,17 @@
     <p><%= @bill.icon %>&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p class= 'grey'><%= @bill.name %></p>
   </div>
-  <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year</p>
+  <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year.
+  The total amount for <%= @bill.name %> items is stated at the bottom of the list.</p>
   <hr>
   <div id="items">
     <% item_amount = 0 %>
     <% @items.each do |item| %>
       <%= render item %>
+      <% item_amount += item.amount %>
+    <% end %>
   </div>
   <div class= 'items-amount'>
-    <% item_amount += item.amount %>
-    <% end %>
     <p class= 'grey'>TOTAL AMOUNT</p>
     <p class= 'grey'>&dollar;&nbsp;<%= item_amount %></p>
   </div>

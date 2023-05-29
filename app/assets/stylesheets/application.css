@@ -24,6 +24,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-size: 1.03em;
 }
 
 a {
@@ -86,7 +87,7 @@ a {
 .input-field {
   background-color: none;
   border: none;
-  width: 99vw;
+  width: 96vw;
 }
 
 .input-field:focus {
@@ -199,6 +200,15 @@ a {
 
 .prompt {
   font-size: 0.9em;
+  width: 25vw;
+}
+
+.prompt option {
+  font-size: 0.7em;
+}
+
+.prompt option:hover {
+  background-color: #666b72;
 }
 
 .empty-div {
