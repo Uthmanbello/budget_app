@@ -73,15 +73,15 @@ After the server starts running, go to your browser and visit the following link
 To test the app, you can try using some of the preset bill icons. When creating a bill after login in enter for:<br>
 bill 1:<br>
 name: `Food`<br>
-icon: `food.jpg`<br>
+icon: `food.jpeg`<br>
 
 bill 2:<br>
 name: `Transport`<br>
-icon: `transport.jpg`<br>
+icon: `transport.jpeg`<br>
 
 bill 3:<br>
 name: `Home`<br>
-icon: `home.jpg`<br>
+icon: `home.jpeg`<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
