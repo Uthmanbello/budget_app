@@ -25,7 +25,7 @@ RSpec.describe Bill, type: :system do
     before(:each) do
       visit '/bills'
     end
-   
+
     it 'Logs in with valid data' do
       fill_in 'Email', with: 'rails@railsmail.com'
       fill_in 'Password', with: '111111'
