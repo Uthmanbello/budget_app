@@ -12,7 +12,7 @@
 
 <div class= 'items-container'>
   <div class= 'items-heading'>
-    <%= image_tag 'profile pic.jpg', alt: "Bill icon", class: 'icon' %>
+    <%= image_tag @bill.icon, alt: "Bill icon", class: 'icon' %>
     <p class= 'grey item-title'><%= @bill.name %></p>
   </div>
   <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year.

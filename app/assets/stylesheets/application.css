@@ -14,8 +14,8 @@
  *= require_self
  */
 
- @import "font-awesome-sprockets";
- @import "font-awesome"; 
+/* @import "font-awesome-sprockets";
+ @import "font-awesome";  */
 
 body {
   background-color: whitesmoke;
@@ -37,15 +37,15 @@ a {
 }
 
 .blue {
-  color: #3778C2;
+  color: #3778c2;
 }
 
 .green {
-  color: #5FB523;
+  color: #5fb523;
 }
 
 .grey {
-  color: #434B54;
+  color: #434b54;
 }
 
 .text1 {
@@ -68,7 +68,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0 15px;
   margin-top: 30vh;
 }
 
@@ -88,7 +88,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3778C2;
+  background-color: #3778c2;
   color: white;
   border-radius: 4px;
   font-size: 1.1em;
@@ -111,7 +111,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3778C2;
+  background-color: #3778c2;
   color: white;
   padding-left: 15px;
 }
@@ -119,17 +119,15 @@ a {
 .login-fields {
   background-color: white;
   margin-top: 10px;
-  border: 1px solid #94989c;;
+  border: 1px solid #94989c;
 }
 
 .login-field {
-  background-color: none;
   border: none;
   padding-top: 15px;
 }
 
 .input-field {
-  background-color: none;
   border: none;
   width: 95vw;
 }
@@ -183,7 +181,7 @@ a {
   justify-content: space-between;
   background-color: white;
   border: 1px solid #e0e6eb;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 0 15px;
   margin: 15px;
   padding-bottom: -15px;
 }
@@ -218,10 +216,10 @@ a {
 .big {
   height: 15vh;
   width: 100%;
-  background-color: #5FB523;
+  background-color: #5fb523;
   position: fixed;
   bottom: 0;
-  padding: 15px
+  padding: 15px;
 }
 
 .small {
@@ -235,8 +233,7 @@ a {
 .empty {
   height: 15vh;
   width: 100%;
-  background-color: none;
-  padding: 15px
+  padding: 15px;
 }
 
 .bar {
@@ -293,10 +290,10 @@ a {
   display: flex;
 }
 
-/* @media only screen and (min-device-width: 768px) {
-.icon {
-  width: 8vw;
-  height: 15vh;
-  padding-right: 10px;
+@media only screen and (min-device-width: 768px) {
+  .icon {
+    width: 8vw;
+    height: 15vh;
+    padding-right: 10px;
+  }
 }
-} */
