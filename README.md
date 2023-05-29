@@ -64,7 +64,9 @@ Open your terminal:
 
 Run:<br>
 `bundle install`<br>
-`rails s`
+`rails db:create`<br>
+`rails db:migrate`<br>
+`rails s`<br>
 
 After the server starts running, go to your browser and visit the following link:
 
@@ -82,6 +84,10 @@ icon: `transport.jpeg`<br>
 bill 3:<br>
 name: `Home`<br>
 icon: `home.jpeg`<br>
+
+bill 4:<br>
+name: `Games`<br>
+icon: `games.png`<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
