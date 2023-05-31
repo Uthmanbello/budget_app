@@ -6,6 +6,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [💻 Demo](#demo)
+- [💻 Presentation](#presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -38,6 +40,12 @@
 - **Connected to Postgresql**
 - **Devise used for authentication**
 - **Capybara used for integration tests**
+
+## 💻 Demo <a name="demo"></a>
+Here is the live [Demo](https://mysite-swfq.onrender.com/)
+
+## 💻 Presentation <a name="presentation"></a>
+Here is the [Project Presentation](https://www.loom.com/share/565abfa2996249f99f9eb3586b628bdc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
