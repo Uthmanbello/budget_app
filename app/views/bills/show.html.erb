@@ -12,7 +12,11 @@
 
 <div class= 'items-container'>
   <div class= 'items-heading'>
-    <%= image_tag @bill.icon, alt: "Bill icon", class: 'icon' %>
+    <% begin %>
+      <%= image_tag @bill.icon, alt: "Bill icon", class: 'icon' %>
+    <% rescue Sprockets::Rails::Helper::AssetNotFound %>
+      <%= image_tag 'default_icon.jpeg', alt: "Default icon", class: 'icon' %>
+    <% end %>
     <p class= 'grey item-title'><%= @bill.name %></p>
   </div>
   <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year.
