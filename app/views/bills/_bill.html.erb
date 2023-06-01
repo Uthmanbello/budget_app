@@ -1,10 +1,6 @@
 <div id="<%= dom_id bill %>" class= 'bills-list'>
   <div class= 'bill-icon'>
-    <% begin %>
-      <%= image_tag bill.icon, alt: "Bill icon", class: 'icon' %>
-    <% rescue Sprockets::Rails::Helper::AssetNotFound %>
-      <%= image_tag 'default_icon.jpeg', alt: "Default icon", class: 'icon' %>
-    <% end %>
+    <%= image_tag bill.icon, alt: "Bill icon", class: 'icon' %>
   </div>
 
   <div class= 'flex-column'>
