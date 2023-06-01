@@ -42,10 +42,10 @@
 - **Capybara used for integration tests**
 
 ## 💻 Demo <a name="demo"></a>
-Here is the live [Demo](https://mysite-swfq.onrender.com/)
+Here is the live [Demo](https://mysite-8xoo.onrender.com/)
 
 ## 💻 Presentation <a name="presentation"></a>
-Here is the [Project Presentation](https://www.loom.com/share/565abfa2996249f99f9eb3586b628bdc)
+Here is the [Project Presentation](https://www.loom.com/share/35fb5f9fc28d4c37be7aa0b2d5f0b3f1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,23 +79,6 @@ Run:<br>
 After the server starts running, go to your browser and visit the following link:
 
 `http://localhost:3000/`
-
-To test the app, you can try using some of the preset bill icons. When creating a bill, after loging in, enter the following for:<br>
-bill 1:<br>
-name: `Food`<br>
-icon: `food.jpeg`<br>
-
-bill 2:<br>
-name: `Transport`<br>
-icon: `transport.jpeg`<br>
-
-bill 3:<br>
-name: `Home`<br>
-icon: `home.jpeg`<br>
-
-bill 4:<br>
-name: `Games`<br>
-icon: `games.png`<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
