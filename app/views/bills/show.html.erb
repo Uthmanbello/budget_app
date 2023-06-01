@@ -1,0 +1,38 @@
+<div class='login'>
+  <div>
+    <%= link_to bills_path, class: 'white' do %>
+      <i class="fa-solid fa-arrow-left fa-2x white"></i>
+    <% end %>
+  </div>
+  <div>
+    <p>ITEMS</p>
+  </div>
+  <div class= 'empty-div'></div>
+</div>
+
+<div class= 'items-container'>
+  <div class= 'items-heading'>
+    <%= image_tag "#{@bill.icon}.png", alt: "Bill icon", class: 'icon' %>
+    <p class= 'grey item-title'><%= @bill.name %></p>
+  </div>
+  <p class= 'text2'>The following are the items to be purchased for <%= @bill.name %> for the year.
+  The total amount for <%= @bill.name %> items is stated at the bottom of the list.</p>
+  <hr>
+  <div id="items">
+    <% item_amount = 0 %>
+    <% @items.each do |item| %>
+      <%= render item %>
+      <% item_amount += item.amount %>
+    <% end %>
+  </div>
+  <div class= 'items-amount'>
+    <p class= 'grey'>TOTAL AMOUNT</p>
+    <p class= 'grey'>&dollar;&nbsp;<%= item_amount %></p>
+  </div>
+</div>
+
+<div class= 'empty'></div>
+
+<div class= 'big'>
+    <%= link_to "ADD", new_item_path, class: 'white small' %>
+</div>

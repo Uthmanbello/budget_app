@@ -1,0 +1,33 @@
+<div class='login'>
+  <div class= 'bars'>
+    <span class= 'bar'></span>
+    <span class= 'bar'></span>
+    <span class= 'bar'></span>
+  </div>
+  <div >
+    <p>BILLS</p>
+  </div>
+  <div>
+    <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: 'submit-button' %>
+  </div>
+</div>
+
+<div id="bills">
+  <div class= 'budget'>
+    <p class= 'text2'>Total Budget</p>
+    <p class= 'grey'>&dollar;&nbsp;<%= calculate_total_budget %></p>
+  </div>
+  <% @bills.each do |bill| %>
+    <%= link_to bill do %>
+      <div class= 'bills'>
+        <%= render bill %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<div class= 'empty'></div>
+
+<div class= 'big'>
+    <%= link_to "ADD", new_bill_path, class: 'white small' %>
+</div>

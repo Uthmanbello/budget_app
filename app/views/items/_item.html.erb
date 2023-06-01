@@ -1,0 +1,10 @@
+<div id="<%= dom_id item %>">
+  <div class= 'items'>
+    <p class= 'grey'><%= item.name %></p>
+    <div>
+      <p class= 'grey'>&dollar;&nbsp;<%= item.amount %></p>
+    </div>
+  </div>
+  <p class= 'time'><%= item.created_at.strftime("%d %B %Y at %l:%M%P") %></p>
+  <hr>
+</div>

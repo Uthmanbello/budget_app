@@ -1,0 +1,15 @@
+<div id="<%= dom_id bill %>" class= 'bills-list'>
+  <div class= 'bill-icon'>
+    <%= image_tag "#{bill.icon}.png", alt: "Bill icon", class: 'icon' %>
+  </div>
+
+  <div class= 'flex-column'>
+    <p class= 'text2'><%= bill.name %></p>
+    <p class= 'time'><%= bill.created_at.strftime("%d %B %Y") %></p>
+  </div>
+
+  <div class= 'bill-total'>
+    <p class= 'grey'>&dollar;&nbsp;<%= calculate_item_amount(bill) %></p>
+  </div>
+
+</div>

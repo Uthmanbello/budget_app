@@ -13,3 +13,287 @@
  *= require_tree .
  *= require_self
  */
+
+/* @import "font-awesome-sprockets";
+ @import "font-awesome";  */
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1.03em;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padding {
+  padding: 15px;
+}
+
+.blue {
+  color: #3778c2;
+}
+
+.green {
+  color: #5fb523;
+}
+
+.grey {
+  color: #434b54;
+}
+
+.text1 {
+  color: #666b72;
+}
+
+.text2 {
+  color: #94989c;
+}
+
+.white {
+  color: white;
+}
+
+.background {
+  color: #e3e7eb;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 30vh;
+}
+
+.title {
+  font-size: 2.8em;
+  font-family: 'Lobster', cursive;
+}
+
+.login-signup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+}
+
+.splash-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3778c2;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.1em;
+  height: 9vh;
+  width: 90vw;
+}
+
+.splash-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666b72;
+  border-radius: 4px;
+  font-size: 1.1em;
+  height: 9vh;
+  width: 90vw;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3778c2;
+  color: white;
+  padding-left: 15px;
+}
+
+.login-fields {
+  background-color: white;
+  margin-top: 10px;
+  border: 1px solid #94989c;
+}
+
+.login-field {
+  border: none;
+  padding-top: 15px;
+}
+
+.input-field {
+  border: none;
+  width: 95vw;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 25px;
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.rule {
+  width: 96vw;
+}
+
+.upload-pic {
+  display: flex;
+}
+
+.user {
+  margin-right: 10px;
+}
+
+.budget {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #e0e6eb;
+  padding: 15px;
+}
+
+.icon {
+  width: 23vw;
+  height: 12vh;
+  padding-right: 10px;
+}
+
+.bills {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #e0e6eb;
+  padding: 15px 15px 0 15px;
+  margin: 15px;
+  padding-bottom: -15px;
+}
+
+.bills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+.bill-total {
+  flex-basis: 10%;
+}
+
+.bill-icon {
+  flex-basis: 30%;
+}
+
+.time {
+  font-size: 0.7em;
+  color: #94989c;
+  margin-top: -5px;
+}
+
+.big {
+  height: 15vh;
+  width: 100%;
+  background-color: #5fb523;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+}
+
+.small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 100%;
+}
+
+.empty {
+  height: 15vh;
+  width: 100%;
+  padding: 15px;
+}
+
+.bar {
+  width: 25px;
+  border: 1px solid white;
+  margin: 2px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.prompt {
+  font-size: 0.9em;
+  width: 25vw;
+}
+
+.prompt option {
+  font-size: 0.7em;
+}
+
+.prompt option:hover {
+  background-color: #666b72;
+}
+
+.empty-div {
+  width: 35px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  width: 82vw;
+}
+
+.item-title {
+  margin-left: 10px;
+}
+
+.items-container {
+  background-color: white;
+  border: 1px solid #e0e6eb;
+  padding: 15px;
+  margin: 15px;
+}
+
+.items-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-heading {
+  display: flex;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .icon {
+    width: 8vw;
+    height: 15vh;
+    padding-right: 10px;
+  }
+}

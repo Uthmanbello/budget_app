@@ -1,0 +1,40 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class='login'>
+    <%= link_to root_path do %>
+      <i class="fa-solid fa-arrow-left fa-2x white"></i>
+    <% end %>
+    <p>REGISTER</P>
+    <div class="actions">
+      <%= f.submit "Next", class: 'submit-button' %>
+    </div>
+  </div>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class='login-fields'>
+    <div class="field login-field text1 padding">
+      <div class= 'upload-pic'>
+        <div class= 'user'><i class="fas fa-user text2 fa-3x"></i>&nbsp;&nbsp;</div>
+        <p>Upload picture</p>
+      </div>
+      <hr class= 'rule'>
+    </div>
+
+    <div class="field login-field text1 padding">
+      <%= f.label :full_name %><br />
+      <%= f.text_field :name, autofocus: true, autocomplete: "name", class: 'input-field' %>
+      <hr class= 'rule'>
+    </div>
+
+    <div class="field login-field text1 padding">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'input-field' %>
+      <hr class= 'rule'>
+    </div>
+
+    <div class="field login-field text1 padding">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: 'input-field' %>
+    </div>
+  </div>
+<% end %>
