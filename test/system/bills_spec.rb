@@ -11,7 +11,7 @@ RSpec.describe Bill, type: :system do
                   password: '111111')
     end
     let(:b1) do
-      Bill.new(name: 'Food', icon: 'icon', author_id: u1.id)
+      Bill.new(name: 'Food', icon: 'food', author_id: u1.id)
     end
 
     let(:i1) do
