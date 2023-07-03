@@ -42,7 +42,7 @@
 - **Capybara used for integration tests**
 
 ## 💻 Demo <a name="demo"></a>
-Here is the live [Demo](https://mysite-8xoo.onrender.com/)
+Here is the live [Demo](https://budget-2kt4.onrender.com/)
 
 ## 💻 Presentation <a name="presentation"></a>
 Here is the [Project Presentation](https://www.loom.com/share/35fb5f9fc28d4c37be7aa0b2d5f0b3f1)
