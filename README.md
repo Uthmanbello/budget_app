@@ -21,7 +21,7 @@
 
 # 📖 BUDGET APP <a name="about-project"></a>
 
-**[Budget App]** is a project created using Ruby on Rails for users to create bills. It can also allow users to create items under these bills with their corresponding amounts. It can be used to track the spending of an individual.
+**[Budget App]** is a project to allow effortless bill management, expense tracking, and financial organization. Users can create bills, add items with amounts, and gain insights into spending. Built with Ruby on Rails.
 
 ## 🛠 Built With <a name="built-with"></a>
 
